@@ -1,0 +1,5 @@
+1. Giải nén WEBSITE_HUYET_SAN_SANG_UP_GITHUB.zip vào một thư mục bất kỳ.
+2. Nhấp đúp index.html để mở bằng Chrome/Edge.
+3. Website chạy ngay; không cần cài thêm phần mềm.
+4. Để đưa lên mạng, đọc README.md hoặc HUONG_DAN_GITHUB_PAGES.txt.
+5. Nếu gặp lỗi, nhấn F12, chụp màn hình Console gửi lại.

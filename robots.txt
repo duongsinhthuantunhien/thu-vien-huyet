@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Thay TEN_TAI_KHOAN bằng tên tài khoản GitHub thực tế của bạn trước khi public.
+Sitemap: https://TEN_TAI_KHOAN.github.io/thu-vien-huyet/sitemap.xml

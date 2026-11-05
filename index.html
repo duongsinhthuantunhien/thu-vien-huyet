@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f8f5">
+  <meta name="description" content="Tra cứu 100 huyệt đạo theo tên, vùng cơ thể, đường kinh và từ khóa. Xem ảnh, vị trí, cách xác định và thông tin tham khảo từ Mẹo nhớ huyệt.">
+  <meta name="color-scheme" content="light">
+  <title>Thư viện 100 huyệt đạo | Tra cứu nhanh</title>
+  <link rel="icon" type="image/png" href="./images/logo-huyet.png">
+  <link rel="apple-touch-icon" href="./images/logo-huyet.png">
+  <link rel="stylesheet" href="./style.css?v=4">
+  <!-- app.js sẽ chỉ nạp data.local.js khi mở file:// hoặc không đọc được data.json. -->
+  <script src="./app.js?v=4" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#ket-qua">Bỏ qua để đến kết quả tra cứu</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <div class="brand" aria-label="Thư viện 100 huyệt đạo">
+        <img class="brand-logo" src="./images/logo-huyet.png" alt="Logo thư viện huyệt đạo" width="72" height="72" loading="eager" decoding="async">
+        <span>
+          <strong>THƯ VIỆN 100 HUYỆT ĐẠO</strong>
+          <small>Tra cứu đơn giản · Dễ học, dễ nhớ</small>
+        </span>
+      </div>
+      <div class="header-actions" role="group" aria-label="Điều chỉnh cỡ chữ">
+        <button type="button" id="font-down" class="tool-button" aria-label="Giảm cỡ chữ">A−</button>
+        <button type="button" id="font-up" class="tool-button" aria-label="Tăng cỡ chữ">A+</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell" id="noi-dung-chinh">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow">TRA CỨU HUYỆT ĐẠO THEO TỪ KHÓA</div>
+      <h1 id="page-title">Bạn muốn tìm hiểu huyệt nào?</h1>
+      <p class="hero-description">
+        Nhập tên huyệt, vùng cơ thể hoặc vấn đề cần tìm hiểu.
+        Có thể gõ không dấu, chẳng hạn <strong>than</strong>, <strong>lung</strong> hoặc <strong>dau dau</strong>.
+      </p>
+      <div class="search-wrap" role="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="10.8" cy="10.8" r="7.3"></circle>
+          <path d="m16.5 16.5 5 5"></path>
+        </svg>
+        <label class="visually-hidden" for="search">Tìm tên huyệt, vùng cơ thể hoặc từ khóa</label>
+        <input id="search" type="search" autocomplete="off" inputmode="search" enterkeyhint="search"
+               placeholder="VD: lưng, thận, đau đầu, Phong Trì..."
+               aria-controls="cards result-groups" aria-describedby="search-help">
+        <button id="clear-search" class="clear-search" type="button" aria-label="Xóa từ khóa tìm kiếm" hidden>✕</button>
+      </div>
+      <p id="search-help" class="visually-hidden">Kết quả được cập nhật khi bạn nhập. Có thể tìm bằng tiếng Việt không dấu.</p>
+      <div class="quick-search" aria-label="Gợi ý tìm nhanh">
+        <span>Gợi ý:</span>
+        <button type="button" data-query="lưng">Lưng</button>
+        <button type="button" data-query="thận">Thận</button>
+        <button type="button" data-query="đau đầu">Đau đầu</button>
+        <button type="button" data-query="Phong Trì">Phong Trì</button>
+      </div>
+      <div class="hero-ornament" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="directory" aria-labelledby="region-title">
+      <div class="section-heading">
+        <div><span class="micro-heading">DUYỆT THEO KHU VỰC</span><h2 id="region-title">Chọn vùng cơ thể</h2></div>
+        <p>Chạm vào một vùng để lọc danh sách.</p>
+      </div>
+      <div id="regions" class="region-list" role="group" aria-label="Lọc theo vùng cơ thể">
+        <button type="button" class="region active" data-region="all" aria-pressed="true">Tất cả</button>
+        <button type="button" class="region" data-region="back" aria-pressed="false">Vai gáy &amp; lưng</button>
+        <button type="button" class="region" data-region="arm" aria-pressed="false">Tay</button>
+        <button type="button" class="region" data-region="chest" aria-pressed="false">Ngực</button>
+        <button type="button" class="region" data-region="abdomen" aria-pressed="false">Bụng</button>
+        <button type="button" class="region" data-region="leg-front" aria-pressed="false">Chân trước</button>
+        <button type="button" class="region" data-region="leg-back" aria-pressed="false">Chân sau</button>
+        <button type="button" class="region" data-region="head" aria-pressed="false">Đầu &amp; mặt</button>
+      </div>
+    </section>
+
+    <section class="results" id="ket-qua" aria-labelledby="result-title">
+      <div class="section-heading results-heading">
+        <div>
+          <span class="micro-heading">DANH MỤC 100 HUYỆT</span>
+          <h2 id="result-title">Khám phá các huyệt</h2>
+          <p id="result-count" role="status" aria-live="polite">Đang tải dữ liệu…</p>
+        </div>
+        <button type="button" id="favorites-toggle" class="favorites-toggle" aria-pressed="false">
+          ☆ Huyệt đã lưu <span id="favorites-count">0</span>
+        </button>
+      </div>
+      <p class="search-note">
+        <strong>Cách đọc kết quả:</strong> huyệt nằm ở vùng đang tìm, huyệt có công dụng được tài liệu nhắc đến
+        và huyệt liên quan theo từ khóa được phân biệt rõ. Đây không phải hướng dẫn tự điều trị.
+      </p>
+      <!-- Không tìm kiếm: danh sách thông thường. Có từ khóa: kết quả theo từng nhóm. -->
+      <div id="cards" class="card-grid" aria-label="Danh sách các huyệt"></div>
+      <div id="result-groups" class="result-groups" aria-label="Kết quả được phân theo mức độ liên quan" hidden></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <div aria-hidden="true">⌕</div>
+        <h3>Chưa tìm thấy huyệt phù hợp</h3>
+        <p>Thử từ ngắn hơn, bỏ dấu hoặc chọn lại “Tất cả”.</p>
+        <button type="button" id="reset-search">Đặt lại tìm kiếm</button>
+      </div>
+      <div class="more-wrap">
+        <button type="button" id="show-more" class="show-more" hidden>Xem thêm huyệt</button>
+      </div>
+    </section>
+
+    <aside class="disclaimer" aria-label="Lưu ý an toàn y khoa">
+      <span aria-hidden="true">ⓘ</span>
+      <p><strong>Lưu ý an toàn:</strong> Thông tin chỉ mang tính tham khảo, không thay thế tư vấn y khoa.
+        Châm cứu phải do người có chứng chỉ hành nghề thực hiện.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>Thư viện 100 huyệt đạo · Tham khảo tài liệu “Mẹo nhớ huyệt”</span>
+    <span id="library-status">Đang tải danh mục huyệt…</span>
+  </footer>
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Quay lại đầu trang" hidden>↑</button>
+
+  <dialog id="detail-modal" class="detail-dialog" aria-labelledby="detail-title" aria-describedby="detail-review">
+    <div class="dialog-inner">
+      <div class="dialog-header">
+        <div>
+          <div id="detail-code" class="detail-code"></div>
+          <h2 id="detail-title">Thông tin huyệt</h2>
+          <div class="detail-name-extra">
+            <span id="detail-hanviet" lang="zh-Hant"></span>
+            <span id="detail-pinyin"></span>
+          </div>
+        </div>
+        <button type="button" id="close-modal" class="close-modal" aria-label="Đóng chi tiết">✕</button>
+      </div>
+      <div class="dialog-layout">
+        <div class="detail-picture">
+          <!-- Không gán src ở HTML: ảnh lớn chỉ tải khi người dùng mở chi tiết. -->
+          <img id="detail-image" alt="Hình minh họa vị trí huyệt" width="670" height="945" decoding="async">
+          <p id="detail-source" class="source-label">Ảnh minh họa theo tài liệu tham khảo.</p>
+          <a id="open-image" class="original-link" target="_blank" rel="noopener noreferrer" href="#">Mở ảnh gốc để phóng to ↗</a>
+        </div>
+        <div class="detail-description">
+          <div class="detail-tags">
+            <span id="detail-region"></span>
+            <span id="detail-meridian"></span>
+          </div>
+          <section><h3>Vị trí huyệt</h3><p id="detail-position"></p></section>
+          <section><h3>Cách xác định huyệt</h3><p id="detail-howto"></p></section>
+          <section><h3>Tác dụng theo tài liệu</h3><ul id="detail-effects" class="detail-list"></ul></section>
+          <section><h3>Chỉ định được tài liệu đề cập</h3><ul id="detail-indications" class="detail-list"></ul></section>
+          <section><h3>Từ khóa liên quan</h3><p id="detail-keywords" class="detail-keywords"></p></section>
+          <section><h3>Trang tham chiếu</h3><p>Trang đánh số trong bộ dữ liệu: <span id="detail-page">—</span></p></section>
+          <p id="detail-review" class="review-notice">
+            Nội dung tổng hợp từ tài liệu tham khảo, chưa thay thế xác minh chuyên môn y khoa.
+          </p>
+          <div class="dialog-actions">
+            <button type="button" id="detail-favorite" class="action-secondary" aria-pressed="false">☆ Lưu huyệt</button>
+            <button type="button" id="detail-share" class="action-primary">↗ Chia sẻ huyệt</button>
+          </div>
+          <p id="share-message" class="share-message" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="modal-warning">
+        Thông tin chỉ mang tính tham khảo, không thay thế tư vấn y khoa.
+        Châm cứu phải do người có chứng chỉ hành nghề thực hiện.
+      </div>
+    </div>
+  </dialog>
+
+  <noscript>Trang tra cứu cần bật JavaScript để tìm kiếm và xem thông tin huyệt.</noscript>
+</body>
+</html>

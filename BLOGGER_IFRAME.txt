@@ -1,0 +1,35 @@
+<!-- BLOGGER: DÁN TOÀN BỘ ĐOẠN HTML DƯỚI ĐÂY VÀO TIỆN ÍCH HTML/JavaScript -->
+<div style="width:100%;max-width:100%;margin:0 auto;box-sizing:border-box;">
+  <div style="display:flex;justify-content:flex-end;align-items:center;margin:0 0 10px;">
+    <a href="https://TEN_TAI_KHOAN.github.io/thu-vien-huyet/"
+       target="_blank" rel="noopener noreferrer"
+       style="display:inline-block;background:#146b4a;color:#fff;padding:11px 17px;border-radius:10px;text-decoration:none;font:700 14px/1.3 Arial,sans-serif;">
+      ⛶ Mở toàn màn hình
+    </a>
+  </div>
+  <iframe
+    src="https://TEN_TAI_KHOAN.github.io/thu-vien-huyet/"
+    title="Thư viện 100 huyệt đạo - tra cứu"
+    loading="lazy"
+    allow="clipboard-write; web-share"
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin"
+    style="display:block;width:100%;height:85vh;min-height:600px;max-width:100%;border:1px solid #d5e5da;border-radius:12px;box-sizing:border-box;background:#fff;"
+  ></iframe>
+  <p style="margin:7px 0;color:#51695d;font:13px/1.5 Arial,sans-serif;">
+    Nếu khung không hiển thị, hãy bấm “Mở toàn màn hình” để truy cập trực tiếp.
+  </p>
+</div>
+<!-- KẾT THÚC ĐOẠN HTML BLOGGER -->
+
+BA BƯỚC NHÚNG VÀO BLOGGER
+Bước 1: Vào Blogger → Bố cục → Thêm tiện ích → HTML/JavaScript (nên chọn vùng nội dung chính).
+Bước 2: Dán đoạn HTML ở trên và thay TEN_TAI_KHOAN ở CẢ HAI liên kết.
+Bước 3: Bấm Lưu tiện ích, lưu Bố cục nếu được hỏi, mở blog để kiểm tra.
+
+LƯU Ý
+- Nút “Mở toàn màn hình” mở trang GitHub Pages trong tab mới, không ép trình duyệt vào chế độ fullscreen.
+- Khung co giãn theo chiều rộng vùng chứa. Chiều cao là 85% chiều cao màn hình, tối thiểu 600px; phần nội dung dài có thể cuộn bên trong.
+- Blogger/theme có thể lọc mã iframe hoặc đặt tiện ích trong cột hẹp. Thử đặt tại vùng nội dung chính, kiểm tra trang GitHub Pages trực tiếp; nếu vẫn bị chặn, dùng nút mở tab riêng. Không có cách bảo đảm vượt qua mọi chính sách chặn nhúng.
+- Chức năng chia sẻ và sao chép phụ thuộc quyền trình duyệt/iframe; liên kết trực tiếp vẫn dùng được.
+- Đừng dán toàn bộ file này: chỉ dán phần HTML nằm giữa hai dòng chú thích BLOGGER/KẾT THÚC.

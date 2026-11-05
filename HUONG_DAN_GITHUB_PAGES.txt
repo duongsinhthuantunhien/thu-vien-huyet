@@ -1,0 +1,10 @@
+01. Đăng ký/đăng nhập tài khoản GitHub tại https://github.com/.
+02. Tạo repository mới tên thu-vien-huyet; chọn Public và Create repository.
+03. Giải nén ZIP; tải CÁC TỆP bên trong lên gốc repository, không tải nguyên ZIP hay thư mục bao ngoài.
+04. Tải đủ thư mục images/ và images/thumb/: 100 JPG + 100 WebP + logo; trình duyệt tối đa 100 tệp/lượt nên chia đợt hoặc dùng GitHub Desktop.
+05. Vào Settings → Pages → Source: Deploy from a branch → Branch: main → Folder: /(root) → Save.
+06. Kiểm tra mục Pages để nhận link https://TEN_TAI_KHOAN.github.io/thu-vien-huyet/ (có thể cần vài phút).
+07. Mở link bằng cửa sổ ẩn danh và thử tìm kiếm, ảnh huyệt, logo và popup.
+08. Thay TEN_TAI_KHOAN trong sitemap.xml và robots.txt bằng tài khoản GitHub thật, tải hai tệp cập nhật lên GitHub.
+09. Mở BLOGGER_IFRAME.txt, sao chép đoạn HTML và nhúng theo 3 bước ghi bên dưới.
+10. Nếu lỗi 404: kiểm tra index.html có ở gốc repository, đúng tên thu-vien-huyet, main /(root), và đợi Pages triển khai xong.
