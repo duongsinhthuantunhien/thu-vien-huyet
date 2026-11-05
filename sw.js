@@ -1,8 +1,8 @@
 /* Cache B4: nâng phiên bản này khi cập nhật website để bỏ cache giao diện cũ. */
-const VERSION = 'huyet-100-b6-20261105-v2';
+const VERSION = 'huyet-100-fix3-mobile-20261105';
 const CORE = 'huyet-core-' + VERSION;
 const PICTURES = 'huyet-images-' + VERSION;
-const CORE_FILES = ['./', './index.html', './style.css?v=4', './app.js?v=4', './data.json', './images/logo-huyet.png'];
+const CORE_FILES = ['./', './index.html', './style.css?v=7', './app.js?v=6', './data.json', './images/logo-huyet.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CORE).then(cache => cache.addAll(CORE_FILES)));
